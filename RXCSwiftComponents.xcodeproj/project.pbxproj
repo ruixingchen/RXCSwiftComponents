@@ -7,53 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		802EABC8236BDA99006C8A6D /* NSArray+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABB3236BDA99006C8A6D /* NSArray+RXCExtension.swift */; };
-		802EABC9236BDA99006C8A6D /* Error+URLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABB4236BDA99006C8A6D /* Error+URLError.swift */; };
-		802EABCA236BDA99006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABB5236BDA99006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift */; };
-		802EABCB236BDA99006C8A6D /* NSPointerArray+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABB6236BDA99006C8A6D /* NSPointerArray+RXCExtension.swift */; };
-		802EABCC236BDA99006C8A6D /* String+RXCExtension+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABB7236BDA99006C8A6D /* String+RXCExtension+MD5.swift */; };
-		802EABCD236BDA99006C8A6D /* TimeInterval+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABB8236BDA99006C8A6D /* TimeInterval+RXCExtension.swift */; };
-		802EABCE236BDA99006C8A6D /* Bool+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABB9236BDA99006C8A6D /* Bool+RXCExtension.swift */; };
-		802EABCF236BDA99006C8A6D /* CharacterSet+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABBA236BDA99006C8A6D /* CharacterSet+RXCExtension.swift */; };
-		802EABD0236BDA99006C8A6D /* Data+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABBB236BDA99006C8A6D /* Data+RXCExtension.swift */; };
-		802EABD1236BDA99006C8A6D /* SwiftArray+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABBC236BDA99006C8A6D /* SwiftArray+RXCExtension.swift */; };
-		802EABD2236BDA99006C8A6D /* Integer+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABBD236BDA99006C8A6D /* Integer+RXCExtension.swift */; };
-		802EABD4236BDA99006C8A6D /* Result+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABBF236BDA99006C8A6D /* Result+RXCExtension.swift */; };
-		802EABD5236BDA99006C8A6D /* FloatingPoint+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABC0236BDA99006C8A6D /* FloatingPoint+RXCExtension.swift */; };
-		802EABD6236BDA99006C8A6D /* NSMutableAttributedString+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABC1236BDA99006C8A6D /* NSMutableAttributedString+RXCExtension.swift */; };
-		802EABD7236BDA99006C8A6D /* NSAttributedString+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABC2236BDA99006C8A6D /* NSAttributedString+RXCExtension.swift */; };
-		802EABD8236BDA99006C8A6D /* NSRegularExpression+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABC3236BDA99006C8A6D /* NSRegularExpression+RXCExtension.swift */; };
-		802EABD9236BDA99006C8A6D /* String+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABC4236BDA99006C8A6D /* String+RXCExtension.swift */; };
-		802EABDA236BDA99006C8A6D /* URLComponents+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABC5236BDA99006C8A6D /* URLComponents+RXCExtension.swift */; };
-		802EABDB236BDA99006C8A6D /* NSRange+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABC6236BDA99006C8A6D /* NSRange+RXCExtension.swift */; };
-		802EABDC236BDA99006C8A6D /* URL+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABC7236BDA99006C8A6D /* URL+RXCExtension.swift */; };
-		802EABDE236BDAB6006C8A6D /* DispatchTime+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABDD236BDAB6006C8A6D /* DispatchTime+RXCExtension.swift */; };
-		802EABEB236BDB01006C8A6D /* UINavigationBar+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE0236BDB00006C8A6D /* UINavigationBar+RXCExtension.swift */; };
-		802EABEC236BDB01006C8A6D /* UITextView+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE1236BDB00006C8A6D /* UITextView+RXCExtension.swift */; };
-		802EABED236BDB01006C8A6D /* UIImage+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE2236BDB00006C8A6D /* UIImage+RXCExtension.swift */; };
-		802EABEE236BDB01006C8A6D /* UIResponder+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE3236BDB00006C8A6D /* UIResponder+RXCExtension.swift */; };
-		802EABEF236BDB01006C8A6D /* UIView+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE4236BDB00006C8A6D /* UIView+RXCExtension.swift */; };
-		802EABF0236BDB01006C8A6D /* UIViewController+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE5236BDB00006C8A6D /* UIViewController+RXCExtension.swift */; };
-		802EABF1236BDB01006C8A6D /* UILayoutPriority+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE6236BDB00006C8A6D /* UILayoutPriority+RXCExtension.swift */; };
-		802EABF2236BDB01006C8A6D /* UITableViewCell+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE7236BDB01006C8A6D /* UITableViewCell+RXCExtension.swift */; };
-		802EABF3236BDB01006C8A6D /* UIColor+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE8236BDB01006C8A6D /* UIColor+RXCExtension.swift */; };
-		802EABF4236BDB01006C8A6D /* UIEdgeInsets+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABE9236BDB01006C8A6D /* UIEdgeInsets+RXCExtension.swift */; };
-		802EABF5236BDB01006C8A6D /* UIFont+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABEA236BDB01006C8A6D /* UIFont+RXCExtension.swift */; };
-		802EAC03236C0687006C8A6D /* ASCellNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABF7236C0687006C8A6D /* ASCellNode+RXCExtension.swift */; };
-		802EAC05236C0687006C8A6D /* PINRemoteImageManager+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABF9236C0687006C8A6D /* PINRemoteImageManager+RXCExtension.swift */; };
-		802EAC06236C0687006C8A6D /* ASNetworkImageNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABFA236C0687006C8A6D /* ASNetworkImageNode+RXCExtension.swift */; };
-		802EAC07236C0687006C8A6D /* ASLayoutElement+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABFB236C0687006C8A6D /* ASLayoutElement+RXCExtension.swift */; };
-		802EAC09236C0687006C8A6D /* ASImageNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABFD236C0687006C8A6D /* ASImageNode+RXCExtension.swift */; };
-		802EAC0A236C0687006C8A6D /* ASLayoutElement+Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABFE236C0687006C8A6D /* ASLayoutElement+Link.swift */; };
-		802EAC0B236C0687006C8A6D /* ASLayoutElementStyle+Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EABFF236C0687006C8A6D /* ASLayoutElementStyle+Link.swift */; };
-		802EAC0C236C0687006C8A6D /* ASTextNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC00236C0687006C8A6D /* ASTextNode+RXCExtension.swift */; };
-		802EAC0D236C0687006C8A6D /* ASTableNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC01236C0687006C8A6D /* ASTableNode+RXCExtension.swift */; };
-		802EAC0E236C0687006C8A6D /* ASDisplayNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC02236C0687006C8A6D /* ASDisplayNode+RXCExtension.swift */; };
-		802EAC10236C0969006C8A6D /* ASTextNode+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC0F236C0969006C8A6D /* ASTextNode+Label.swift */; };
-		802EAC16236C0A48006C8A6D /* CGImage+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC12236C0A48006C8A6D /* CGImage+RXCExtension.swift */; };
-		802EAC17236C0A48006C8A6D /* CGSize+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC13236C0A48006C8A6D /* CGSize+RXCExtension.swift */; };
-		802EAC18236C0A48006C8A6D /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC14236C0A48006C8A6D /* CGRect+Extension.swift */; };
-		802EAC19236C0A48006C8A6D /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC15236C0A48006C8A6D /* CGFloat+Extension.swift */; };
+		802EAC70236C0CD0006C8A6D /* ASCellNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC3C236C0CD0006C8A6D /* ASCellNode+RXCExtension.swift */; };
+		802EAC71236C0CD0006C8A6D /* ASTextNode+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC3D236C0CD0006C8A6D /* ASTextNode+Label.swift */; };
+		802EAC72236C0CD0006C8A6D /* PINRemoteImageManager+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC3E236C0CD0006C8A6D /* PINRemoteImageManager+RXCExtension.swift */; };
+		802EAC73236C0CD0006C8A6D /* ASNetworkImageNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC3F236C0CD0006C8A6D /* ASNetworkImageNode+RXCExtension.swift */; };
+		802EAC74236C0CD0006C8A6D /* ASImageNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC40236C0CD0006C8A6D /* ASImageNode+RXCExtension.swift */; };
+		802EAC75236C0CD0006C8A6D /* ASLayoutElement+Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC41236C0CD0006C8A6D /* ASLayoutElement+Link.swift */; };
+		802EAC76236C0CD0006C8A6D /* ASLayoutElementStyle+Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC42236C0CD0006C8A6D /* ASLayoutElementStyle+Link.swift */; };
+		802EAC77236C0CD0006C8A6D /* ASTextNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC43236C0CD0006C8A6D /* ASTextNode+RXCExtension.swift */; };
+		802EAC78236C0CD0006C8A6D /* ASTableNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC44236C0CD0006C8A6D /* ASTableNode+RXCExtension.swift */; };
+		802EAC79236C0CD0006C8A6D /* ASLayoutElement+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC45236C0CD0006C8A6D /* ASLayoutElement+RXCExtension.swift */; };
+		802EAC7A236C0CD0006C8A6D /* ASDisplayNode+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC46236C0CD0006C8A6D /* ASDisplayNode+RXCExtension.swift */; };
+		802EAC7B236C0CD0006C8A6D /* CGImage+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC4A236C0CD0006C8A6D /* CGImage+RXCExtension.swift */; };
+		802EAC7C236C0CD0006C8A6D /* CGSize+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC4B236C0CD0006C8A6D /* CGSize+RXCExtension.swift */; };
+		802EAC7D236C0CD0006C8A6D /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC4C236C0CD0006C8A6D /* CGRect+Extension.swift */; };
+		802EAC7E236C0CD0006C8A6D /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC4D236C0CD0006C8A6D /* CGFloat+Extension.swift */; };
+		802EAC7F236C0CD0006C8A6D /* UINavigationBar+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC4F236C0CD0006C8A6D /* UINavigationBar+RXCExtension.swift */; };
+		802EAC80236C0CD0006C8A6D /* UIResponder+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC50236C0CD0006C8A6D /* UIResponder+RXCExtension.swift */; };
+		802EAC81236C0CD0006C8A6D /* UIColor+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC51236C0CD0006C8A6D /* UIColor+RXCExtension.swift */; };
+		802EAC82236C0CD0006C8A6D /* UIView+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC52236C0CD0006C8A6D /* UIView+RXCExtension.swift */; };
+		802EAC83236C0CD0006C8A6D /* UIViewController+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC53236C0CD0006C8A6D /* UIViewController+RXCExtension.swift */; };
+		802EAC84236C0CD0006C8A6D /* UIFont+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC54236C0CD0006C8A6D /* UIFont+RXCExtension.swift */; };
+		802EAC85236C0CD0006C8A6D /* UITableViewCell+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC55236C0CD0006C8A6D /* UITableViewCell+RXCExtension.swift */; };
+		802EAC86236C0CD0006C8A6D /* UITextView+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC56236C0CD0006C8A6D /* UITextView+RXCExtension.swift */; };
+		802EAC87236C0CD0006C8A6D /* UILayoutPriority+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC57236C0CD0006C8A6D /* UILayoutPriority+RXCExtension.swift */; };
+		802EAC88236C0CD0006C8A6D /* UIEdgeInsets+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC58236C0CD0006C8A6D /* UIEdgeInsets+RXCExtension.swift */; };
+		802EAC89236C0CD0006C8A6D /* UIImage+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC59236C0CD0006C8A6D /* UIImage+RXCExtension.swift */; };
+		802EAC8A236C0CD0006C8A6D /* CharacterSet+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC5B236C0CD0006C8A6D /* CharacterSet+RXCExtension.swift */; };
+		802EAC8B236C0CD0006C8A6D /* Result+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC5C236C0CD0006C8A6D /* Result+RXCExtension.swift */; };
+		802EAC8C236C0CD0006C8A6D /* TimeInterval+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC5D236C0CD0006C8A6D /* TimeInterval+RXCExtension.swift */; };
+		802EAC8D236C0CD0006C8A6D /* DispatchTime+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC5E236C0CD0006C8A6D /* DispatchTime+RXCExtension.swift */; };
+		802EAC8E236C0CD0006C8A6D /* NSPointerArray+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC5F236C0CD0006C8A6D /* NSPointerArray+RXCExtension.swift */; };
+		802EAC8F236C0CD0006C8A6D /* String+RXCExtension+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC60236C0CD0006C8A6D /* String+RXCExtension+MD5.swift */; };
+		802EAC90236C0CD0006C8A6D /* FloatingPoint+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC61236C0CD0006C8A6D /* FloatingPoint+RXCExtension.swift */; };
+		802EAC91236C0CD0006C8A6D /* URLComponents+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC62236C0CD0006C8A6D /* URLComponents+RXCExtension.swift */; };
+		802EAC92236C0CD0006C8A6D /* Error+URLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC63236C0CD0006C8A6D /* Error+URLError.swift */; };
+		802EAC93236C0CD0006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC64236C0CD0006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift */; };
+		802EAC94236C0CD0006C8A6D /* Bool+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC65236C0CD0006C8A6D /* Bool+RXCExtension.swift */; };
+		802EAC95236C0CD0006C8A6D /* NSArray+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC66236C0CD0006C8A6D /* NSArray+RXCExtension.swift */; };
+		802EAC96236C0CD0006C8A6D /* String+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC67236C0CD0006C8A6D /* String+RXCExtension.swift */; };
+		802EAC97236C0CD0006C8A6D /* NSRegularExpression+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC68236C0CD0006C8A6D /* NSRegularExpression+RXCExtension.swift */; };
+		802EAC98236C0CD0006C8A6D /* SwiftArray+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC69236C0CD0006C8A6D /* SwiftArray+RXCExtension.swift */; };
+		802EAC99236C0CD0006C8A6D /* NSAttributedString+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC6A236C0CD0006C8A6D /* NSAttributedString+RXCExtension.swift */; };
+		802EAC9A236C0CD0006C8A6D /* NSMutableAttributedString+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC6B236C0CD0006C8A6D /* NSMutableAttributedString+RXCExtension.swift */; };
+		802EAC9B236C0CD0006C8A6D /* Integer+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC6C236C0CD0006C8A6D /* Integer+RXCExtension.swift */; };
+		802EAC9C236C0CD0006C8A6D /* Data+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC6D236C0CD0006C8A6D /* Data+RXCExtension.swift */; };
+		802EAC9D236C0CD0006C8A6D /* URL+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC6E236C0CD0006C8A6D /* URL+RXCExtension.swift */; };
+		802EAC9E236C0CD0006C8A6D /* NSRange+RXCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EAC6F236C0CD0006C8A6D /* NSRange+RXCExtension.swift */; };
+		802EACA1236C0F0D006C8A6D /* RXCMessagedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA0236C0F0D006C8A6D /* RXCMessagedError.swift */; };
+		802EACA3236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA2236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift */; };
+		802EACA7236C1469006C8A6D /* RXCBindableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA6236C1469006C8A6D /* RXCBindableObject.swift */; };
+		802EACA9236C14EE006C8A6D /* RXCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA8236C14EE006C8A6D /* RXCButton.swift */; };
 		80C8D589236B3ED100664FC5 /* RXCSwiftComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C8D57F236B3ED000664FC5 /* RXCSwiftComponents.framework */; };
 		80C8D58E236B3ED100664FC5 /* RXCSwiftComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8D58D236B3ED100664FC5 /* RXCSwiftComponentsTests.swift */; };
 		80C8D590236B3ED100664FC5 /* RXCSwiftComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C8D582236B3ED000664FC5 /* RXCSwiftComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,53 +77,57 @@
 
 /* Begin PBXFileReference section */
 		298198BB5C9148F9CB8918A3 /* Pods-RXCSwiftComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXCSwiftComponents.release.xcconfig"; path = "Target Support Files/Pods-RXCSwiftComponents/Pods-RXCSwiftComponents.release.xcconfig"; sourceTree = "<group>"; };
-		802EABB3236BDA99006C8A6D /* NSArray+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABB4236BDA99006C8A6D /* Error+URLError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+URLError.swift"; sourceTree = "<group>"; };
-		802EABB5236BDA99006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPointerArray+RXCExtension+Sequence.swift"; sourceTree = "<group>"; };
-		802EABB6236BDA99006C8A6D /* NSPointerArray+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPointerArray+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABB7236BDA99006C8A6D /* String+RXCExtension+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RXCExtension+MD5.swift"; sourceTree = "<group>"; };
-		802EABB8236BDA99006C8A6D /* TimeInterval+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABB9236BDA99006C8A6D /* Bool+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABBA236BDA99006C8A6D /* CharacterSet+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABBB236BDA99006C8A6D /* Data+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABBC236BDA99006C8A6D /* SwiftArray+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftArray+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABBD236BDA99006C8A6D /* Integer+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Integer+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABBF236BDA99006C8A6D /* Result+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABC0236BDA99006C8A6D /* FloatingPoint+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABC1236BDA99006C8A6D /* NSMutableAttributedString+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABC2236BDA99006C8A6D /* NSAttributedString+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABC3236BDA99006C8A6D /* NSRegularExpression+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABC4236BDA99006C8A6D /* String+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABC5236BDA99006C8A6D /* URLComponents+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABC6236BDA99006C8A6D /* NSRange+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRange+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABC7236BDA99006C8A6D /* URL+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABDD236BDAB6006C8A6D /* DispatchTime+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchTime+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE0236BDB00006C8A6D /* UINavigationBar+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE1236BDB00006C8A6D /* UITextView+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE2236BDB00006C8A6D /* UIImage+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE3236BDB00006C8A6D /* UIResponder+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE4236BDB00006C8A6D /* UIView+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE5236BDB00006C8A6D /* UIViewController+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE6236BDB00006C8A6D /* UILayoutPriority+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE7236BDB01006C8A6D /* UITableViewCell+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE8236BDB01006C8A6D /* UIColor+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABE9236BDB01006C8A6D /* UIEdgeInsets+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABEA236BDB01006C8A6D /* UIFont+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABF7236C0687006C8A6D /* ASCellNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASCellNode+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABF9236C0687006C8A6D /* PINRemoteImageManager+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PINRemoteImageManager+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABFA236C0687006C8A6D /* ASNetworkImageNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASNetworkImageNode+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABFB236C0687006C8A6D /* ASLayoutElement+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASLayoutElement+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABFD236C0687006C8A6D /* ASImageNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASImageNode+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EABFE236C0687006C8A6D /* ASLayoutElement+Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASLayoutElement+Link.swift"; sourceTree = "<group>"; };
-		802EABFF236C0687006C8A6D /* ASLayoutElementStyle+Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASLayoutElementStyle+Link.swift"; sourceTree = "<group>"; };
-		802EAC00236C0687006C8A6D /* ASTextNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EAC01236C0687006C8A6D /* ASTableNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTableNode+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EAC02236C0687006C8A6D /* ASDisplayNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASDisplayNode+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EAC0F236C0969006C8A6D /* ASTextNode+Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode+Label.swift"; sourceTree = "<group>"; };
-		802EAC12236C0A48006C8A6D /* CGImage+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EAC13236C0A48006C8A6D /* CGSize+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+RXCExtension.swift"; sourceTree = "<group>"; };
-		802EAC14236C0A48006C8A6D /* CGRect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
-		802EAC15236C0A48006C8A6D /* CGFloat+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		802EAC3C236C0CD0006C8A6D /* ASCellNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASCellNode+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC3D236C0CD0006C8A6D /* ASTextNode+Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode+Label.swift"; sourceTree = "<group>"; };
+		802EAC3E236C0CD0006C8A6D /* PINRemoteImageManager+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PINRemoteImageManager+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC3F236C0CD0006C8A6D /* ASNetworkImageNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASNetworkImageNode+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC40236C0CD0006C8A6D /* ASImageNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASImageNode+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC41236C0CD0006C8A6D /* ASLayoutElement+Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASLayoutElement+Link.swift"; sourceTree = "<group>"; };
+		802EAC42236C0CD0006C8A6D /* ASLayoutElementStyle+Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASLayoutElementStyle+Link.swift"; sourceTree = "<group>"; };
+		802EAC43236C0CD0006C8A6D /* ASTextNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC44236C0CD0006C8A6D /* ASTableNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTableNode+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC45236C0CD0006C8A6D /* ASLayoutElement+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASLayoutElement+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC46236C0CD0006C8A6D /* ASDisplayNode+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASDisplayNode+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC4A236C0CD0006C8A6D /* CGImage+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC4B236C0CD0006C8A6D /* CGSize+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC4C236C0CD0006C8A6D /* CGRect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		802EAC4D236C0CD0006C8A6D /* CGFloat+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		802EAC4F236C0CD0006C8A6D /* UINavigationBar+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC50236C0CD0006C8A6D /* UIResponder+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC51236C0CD0006C8A6D /* UIColor+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC52236C0CD0006C8A6D /* UIView+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC53236C0CD0006C8A6D /* UIViewController+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC54236C0CD0006C8A6D /* UIFont+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC55236C0CD0006C8A6D /* UITableViewCell+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC56236C0CD0006C8A6D /* UITextView+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC57236C0CD0006C8A6D /* UILayoutPriority+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC58236C0CD0006C8A6D /* UIEdgeInsets+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC59236C0CD0006C8A6D /* UIImage+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC5B236C0CD0006C8A6D /* CharacterSet+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC5C236C0CD0006C8A6D /* Result+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC5D236C0CD0006C8A6D /* TimeInterval+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC5E236C0CD0006C8A6D /* DispatchTime+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchTime+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC5F236C0CD0006C8A6D /* NSPointerArray+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPointerArray+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC60236C0CD0006C8A6D /* String+RXCExtension+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RXCExtension+MD5.swift"; sourceTree = "<group>"; };
+		802EAC61236C0CD0006C8A6D /* FloatingPoint+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC62236C0CD0006C8A6D /* URLComponents+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC63236C0CD0006C8A6D /* Error+URLError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+URLError.swift"; sourceTree = "<group>"; };
+		802EAC64236C0CD0006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPointerArray+RXCExtension+Sequence.swift"; sourceTree = "<group>"; };
+		802EAC65236C0CD0006C8A6D /* Bool+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC66236C0CD0006C8A6D /* NSArray+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC67236C0CD0006C8A6D /* String+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC68236C0CD0006C8A6D /* NSRegularExpression+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC69236C0CD0006C8A6D /* SwiftArray+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftArray+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC6A236C0CD0006C8A6D /* NSAttributedString+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC6B236C0CD0006C8A6D /* NSMutableAttributedString+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC6C236C0CD0006C8A6D /* Integer+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Integer+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC6D236C0CD0006C8A6D /* Data+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC6E236C0CD0006C8A6D /* URL+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EAC6F236C0CD0006C8A6D /* NSRange+RXCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRange+RXCExtension.swift"; sourceTree = "<group>"; };
+		802EACA0236C0F0D006C8A6D /* RXCMessagedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCMessagedError.swift; sourceTree = "<group>"; };
+		802EACA2236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCSimpleMJRefreshHeader.swift; sourceTree = "<group>"; };
+		802EACA6236C1469006C8A6D /* RXCBindableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCBindableObject.swift; sourceTree = "<group>"; };
+		802EACA8236C14EE006C8A6D /* RXCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCButton.swift; sourceTree = "<group>"; };
 		80C8D57F236B3ED000664FC5 /* RXCSwiftComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXCSwiftComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C8D582236B3ED000664FC5 /* RXCSwiftComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXCSwiftComponents.h; sourceTree = "<group>"; };
 		80C8D583236B3ED000664FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,51 +183,132 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		802EABDF236BDAF3006C8A6D /* UIKit */ = {
+		802EAC3A236C0CD0006C8A6D /* ASDK */ = {
 			isa = PBXGroup;
 			children = (
-				802EABE8236BDB01006C8A6D /* UIColor+RXCExtension.swift */,
-				802EABE9236BDB01006C8A6D /* UIEdgeInsets+RXCExtension.swift */,
-				802EABEA236BDB01006C8A6D /* UIFont+RXCExtension.swift */,
-				802EABE2236BDB00006C8A6D /* UIImage+RXCExtension.swift */,
-				802EABE6236BDB00006C8A6D /* UILayoutPriority+RXCExtension.swift */,
-				802EABE0236BDB00006C8A6D /* UINavigationBar+RXCExtension.swift */,
-				802EABE3236BDB00006C8A6D /* UIResponder+RXCExtension.swift */,
-				802EABE7236BDB01006C8A6D /* UITableViewCell+RXCExtension.swift */,
-				802EABE1236BDB00006C8A6D /* UITextView+RXCExtension.swift */,
-				802EABE4236BDB00006C8A6D /* UIView+RXCExtension.swift */,
-				802EABE5236BDB00006C8A6D /* UIViewController+RXCExtension.swift */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		802EABF6236C0687006C8A6D /* ASDK */ = {
-			isa = PBXGroup;
-			children = (
-				802EABF7236C0687006C8A6D /* ASCellNode+RXCExtension.swift */,
-				802EABF9236C0687006C8A6D /* PINRemoteImageManager+RXCExtension.swift */,
-				802EABFA236C0687006C8A6D /* ASNetworkImageNode+RXCExtension.swift */,
-				802EABFB236C0687006C8A6D /* ASLayoutElement+RXCExtension.swift */,
-				802EABFD236C0687006C8A6D /* ASImageNode+RXCExtension.swift */,
-				802EABFE236C0687006C8A6D /* ASLayoutElement+Link.swift */,
-				802EABFF236C0687006C8A6D /* ASLayoutElementStyle+Link.swift */,
-				802EAC0F236C0969006C8A6D /* ASTextNode+Label.swift */,
-				802EAC00236C0687006C8A6D /* ASTextNode+RXCExtension.swift */,
-				802EAC01236C0687006C8A6D /* ASTableNode+RXCExtension.swift */,
-				802EAC02236C0687006C8A6D /* ASDisplayNode+RXCExtension.swift */,
+				802EAC3B236C0CD0006C8A6D /* Extension */,
 			);
 			path = ASDK;
 			sourceTree = "<group>";
 		};
-		802EAC11236C0A48006C8A6D /* CoreGraphics */ = {
+		802EAC3B236C0CD0006C8A6D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				802EAC12236C0A48006C8A6D /* CGImage+RXCExtension.swift */,
-				802EAC13236C0A48006C8A6D /* CGSize+RXCExtension.swift */,
-				802EAC14236C0A48006C8A6D /* CGRect+Extension.swift */,
-				802EAC15236C0A48006C8A6D /* CGFloat+Extension.swift */,
+				802EAC3C236C0CD0006C8A6D /* ASCellNode+RXCExtension.swift */,
+				802EAC3D236C0CD0006C8A6D /* ASTextNode+Label.swift */,
+				802EAC3E236C0CD0006C8A6D /* PINRemoteImageManager+RXCExtension.swift */,
+				802EAC3F236C0CD0006C8A6D /* ASNetworkImageNode+RXCExtension.swift */,
+				802EAC40236C0CD0006C8A6D /* ASImageNode+RXCExtension.swift */,
+				802EAC41236C0CD0006C8A6D /* ASLayoutElement+Link.swift */,
+				802EAC42236C0CD0006C8A6D /* ASLayoutElementStyle+Link.swift */,
+				802EAC43236C0CD0006C8A6D /* ASTextNode+RXCExtension.swift */,
+				802EAC44236C0CD0006C8A6D /* ASTableNode+RXCExtension.swift */,
+				802EAC45236C0CD0006C8A6D /* ASLayoutElement+RXCExtension.swift */,
+				802EAC46236C0CD0006C8A6D /* ASDisplayNode+RXCExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		802EAC47236C0CD0006C8A6D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				802EAC9F236C0EFD006C8A6D /* Components */,
+				802EAC48236C0CD0006C8A6D /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		802EAC48236C0CD0006C8A6D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				802EAC49236C0CD0006C8A6D /* CoreGraphics */,
+				802EAC4E236C0CD0006C8A6D /* UIKit */,
+				802EAC5A236C0CD0006C8A6D /* Foundation */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		802EAC49236C0CD0006C8A6D /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				802EAC4A236C0CD0006C8A6D /* CGImage+RXCExtension.swift */,
+				802EAC4B236C0CD0006C8A6D /* CGSize+RXCExtension.swift */,
+				802EAC4C236C0CD0006C8A6D /* CGRect+Extension.swift */,
+				802EAC4D236C0CD0006C8A6D /* CGFloat+Extension.swift */,
 			);
 			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		802EAC4E236C0CD0006C8A6D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				802EAC4F236C0CD0006C8A6D /* UINavigationBar+RXCExtension.swift */,
+				802EAC50236C0CD0006C8A6D /* UIResponder+RXCExtension.swift */,
+				802EAC51236C0CD0006C8A6D /* UIColor+RXCExtension.swift */,
+				802EAC52236C0CD0006C8A6D /* UIView+RXCExtension.swift */,
+				802EAC53236C0CD0006C8A6D /* UIViewController+RXCExtension.swift */,
+				802EAC54236C0CD0006C8A6D /* UIFont+RXCExtension.swift */,
+				802EAC55236C0CD0006C8A6D /* UITableViewCell+RXCExtension.swift */,
+				802EAC56236C0CD0006C8A6D /* UITextView+RXCExtension.swift */,
+				802EAC57236C0CD0006C8A6D /* UILayoutPriority+RXCExtension.swift */,
+				802EAC58236C0CD0006C8A6D /* UIEdgeInsets+RXCExtension.swift */,
+				802EAC59236C0CD0006C8A6D /* UIImage+RXCExtension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		802EAC5A236C0CD0006C8A6D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				802EAC5B236C0CD0006C8A6D /* CharacterSet+RXCExtension.swift */,
+				802EAC5C236C0CD0006C8A6D /* Result+RXCExtension.swift */,
+				802EAC5D236C0CD0006C8A6D /* TimeInterval+RXCExtension.swift */,
+				802EAC5E236C0CD0006C8A6D /* DispatchTime+RXCExtension.swift */,
+				802EAC5F236C0CD0006C8A6D /* NSPointerArray+RXCExtension.swift */,
+				802EAC60236C0CD0006C8A6D /* String+RXCExtension+MD5.swift */,
+				802EAC61236C0CD0006C8A6D /* FloatingPoint+RXCExtension.swift */,
+				802EAC62236C0CD0006C8A6D /* URLComponents+RXCExtension.swift */,
+				802EAC63236C0CD0006C8A6D /* Error+URLError.swift */,
+				802EAC64236C0CD0006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift */,
+				802EAC65236C0CD0006C8A6D /* Bool+RXCExtension.swift */,
+				802EAC66236C0CD0006C8A6D /* NSArray+RXCExtension.swift */,
+				802EAC67236C0CD0006C8A6D /* String+RXCExtension.swift */,
+				802EAC68236C0CD0006C8A6D /* NSRegularExpression+RXCExtension.swift */,
+				802EAC69236C0CD0006C8A6D /* SwiftArray+RXCExtension.swift */,
+				802EAC6A236C0CD0006C8A6D /* NSAttributedString+RXCExtension.swift */,
+				802EAC6B236C0CD0006C8A6D /* NSMutableAttributedString+RXCExtension.swift */,
+				802EAC6C236C0CD0006C8A6D /* Integer+RXCExtension.swift */,
+				802EAC6D236C0CD0006C8A6D /* Data+RXCExtension.swift */,
+				802EAC6E236C0CD0006C8A6D /* URL+RXCExtension.swift */,
+				802EAC6F236C0CD0006C8A6D /* NSRange+RXCExtension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		802EAC9F236C0EFD006C8A6D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				802EACA0236C0F0D006C8A6D /* RXCMessagedError.swift */,
+				802EACA6236C1469006C8A6D /* RXCBindableObject.swift */,
+				802EACA8236C14EE006C8A6D /* RXCButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		802EACA4236C0F5A006C8A6D /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				802EACA5236C0F5F006C8A6D /* Components */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		802EACA5236C0F5F006C8A6D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				802EACA2236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		80C8D575236B3ED000664FC5 = {
@@ -265,56 +354,11 @@
 		80C8D599236B3F6600664FC5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				80C8D59A236B3F6E00664FC5 /* Extension */,
+				802EACA4236C0F5A006C8A6D /* MJRefresh */,
+				802EAC3A236C0CD0006C8A6D /* ASDK */,
+				802EAC47236C0CD0006C8A6D /* Core */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		80C8D59A236B3F6E00664FC5 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				802EABF6236C0687006C8A6D /* ASDK */,
-				80C8D59B236B3F7500664FC5 /* Core */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		80C8D59B236B3F7500664FC5 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				802EAC11236C0A48006C8A6D /* CoreGraphics */,
-				802EABDF236BDAF3006C8A6D /* UIKit */,
-				80C8D5C1236B418100664FC5 /* Foundation */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		80C8D5C1236B418100664FC5 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				802EABB9236BDA99006C8A6D /* Bool+RXCExtension.swift */,
-				802EABBA236BDA99006C8A6D /* CharacterSet+RXCExtension.swift */,
-				802EABBB236BDA99006C8A6D /* Data+RXCExtension.swift */,
-				802EABDD236BDAB6006C8A6D /* DispatchTime+RXCExtension.swift */,
-				802EABB4236BDA99006C8A6D /* Error+URLError.swift */,
-				802EABC0236BDA99006C8A6D /* FloatingPoint+RXCExtension.swift */,
-				802EABBD236BDA99006C8A6D /* Integer+RXCExtension.swift */,
-				802EABB3236BDA99006C8A6D /* NSArray+RXCExtension.swift */,
-				802EABC2236BDA99006C8A6D /* NSAttributedString+RXCExtension.swift */,
-				802EABC1236BDA99006C8A6D /* NSMutableAttributedString+RXCExtension.swift */,
-				802EABB6236BDA99006C8A6D /* NSPointerArray+RXCExtension.swift */,
-				802EABB5236BDA99006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift */,
-				802EABC6236BDA99006C8A6D /* NSRange+RXCExtension.swift */,
-				802EABC3236BDA99006C8A6D /* NSRegularExpression+RXCExtension.swift */,
-				802EABBF236BDA99006C8A6D /* Result+RXCExtension.swift */,
-				802EABC4236BDA99006C8A6D /* String+RXCExtension.swift */,
-				802EABB7236BDA99006C8A6D /* String+RXCExtension+MD5.swift */,
-				802EABBC236BDA99006C8A6D /* SwiftArray+RXCExtension.swift */,
-				802EABB8236BDA99006C8A6D /* TimeInterval+RXCExtension.swift */,
-				802EABC7236BDA99006C8A6D /* URL+RXCExtension.swift */,
-				802EABC5236BDA99006C8A6D /* URLComponents+RXCExtension.swift */,
-			);
-			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,53 +538,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802EAC0D236C0687006C8A6D /* ASTableNode+RXCExtension.swift in Sources */,
-				802EABEC236BDB01006C8A6D /* UITextView+RXCExtension.swift in Sources */,
-				802EABD8236BDA99006C8A6D /* NSRegularExpression+RXCExtension.swift in Sources */,
-				802EAC16236C0A48006C8A6D /* CGImage+RXCExtension.swift in Sources */,
-				802EAC0A236C0687006C8A6D /* ASLayoutElement+Link.swift in Sources */,
-				802EABCF236BDA99006C8A6D /* CharacterSet+RXCExtension.swift in Sources */,
-				802EABED236BDB01006C8A6D /* UIImage+RXCExtension.swift in Sources */,
-				802EAC06236C0687006C8A6D /* ASNetworkImageNode+RXCExtension.swift in Sources */,
-				802EAC03236C0687006C8A6D /* ASCellNode+RXCExtension.swift in Sources */,
-				802EABEE236BDB01006C8A6D /* UIResponder+RXCExtension.swift in Sources */,
-				802EABF1236BDB01006C8A6D /* UILayoutPriority+RXCExtension.swift in Sources */,
-				802EABDA236BDA99006C8A6D /* URLComponents+RXCExtension.swift in Sources */,
-				802EAC0C236C0687006C8A6D /* ASTextNode+RXCExtension.swift in Sources */,
-				802EABD9236BDA99006C8A6D /* String+RXCExtension.swift in Sources */,
-				802EAC10236C0969006C8A6D /* ASTextNode+Label.swift in Sources */,
-				802EABD1236BDA99006C8A6D /* SwiftArray+RXCExtension.swift in Sources */,
-				802EAC19236C0A48006C8A6D /* CGFloat+Extension.swift in Sources */,
-				802EABCE236BDA99006C8A6D /* Bool+RXCExtension.swift in Sources */,
-				802EAC09236C0687006C8A6D /* ASImageNode+RXCExtension.swift in Sources */,
-				802EABD2236BDA99006C8A6D /* Integer+RXCExtension.swift in Sources */,
-				802EABEF236BDB01006C8A6D /* UIView+RXCExtension.swift in Sources */,
-				802EABC8236BDA99006C8A6D /* NSArray+RXCExtension.swift in Sources */,
-				802EABDB236BDA99006C8A6D /* NSRange+RXCExtension.swift in Sources */,
-				802EAC0E236C0687006C8A6D /* ASDisplayNode+RXCExtension.swift in Sources */,
-				802EAC05236C0687006C8A6D /* PINRemoteImageManager+RXCExtension.swift in Sources */,
-				802EABD7236BDA99006C8A6D /* NSAttributedString+RXCExtension.swift in Sources */,
-				802EABF4236BDB01006C8A6D /* UIEdgeInsets+RXCExtension.swift in Sources */,
-				802EABC9236BDA99006C8A6D /* Error+URLError.swift in Sources */,
-				802EABD0236BDA99006C8A6D /* Data+RXCExtension.swift in Sources */,
-				802EABD4236BDA99006C8A6D /* Result+RXCExtension.swift in Sources */,
-				802EAC18236C0A48006C8A6D /* CGRect+Extension.swift in Sources */,
-				802EAC0B236C0687006C8A6D /* ASLayoutElementStyle+Link.swift in Sources */,
-				802EAC07236C0687006C8A6D /* ASLayoutElement+RXCExtension.swift in Sources */,
-				802EABCB236BDA99006C8A6D /* NSPointerArray+RXCExtension.swift in Sources */,
-				802EABDE236BDAB6006C8A6D /* DispatchTime+RXCExtension.swift in Sources */,
-				802EABEB236BDB01006C8A6D /* UINavigationBar+RXCExtension.swift in Sources */,
-				802EABF3236BDB01006C8A6D /* UIColor+RXCExtension.swift in Sources */,
-				802EABD6236BDA99006C8A6D /* NSMutableAttributedString+RXCExtension.swift in Sources */,
-				802EABF0236BDB01006C8A6D /* UIViewController+RXCExtension.swift in Sources */,
-				802EAC17236C0A48006C8A6D /* CGSize+RXCExtension.swift in Sources */,
-				802EABD5236BDA99006C8A6D /* FloatingPoint+RXCExtension.swift in Sources */,
-				802EABCA236BDA99006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift in Sources */,
-				802EABCC236BDA99006C8A6D /* String+RXCExtension+MD5.swift in Sources */,
-				802EABCD236BDA99006C8A6D /* TimeInterval+RXCExtension.swift in Sources */,
-				802EABDC236BDA99006C8A6D /* URL+RXCExtension.swift in Sources */,
-				802EABF5236BDB01006C8A6D /* UIFont+RXCExtension.swift in Sources */,
-				802EABF2236BDB01006C8A6D /* UITableViewCell+RXCExtension.swift in Sources */,
+				802EAC88236C0CD0006C8A6D /* UIEdgeInsets+RXCExtension.swift in Sources */,
+				802EAC9D236C0CD0006C8A6D /* URL+RXCExtension.swift in Sources */,
+				802EAC9E236C0CD0006C8A6D /* NSRange+RXCExtension.swift in Sources */,
+				802EAC8E236C0CD0006C8A6D /* NSPointerArray+RXCExtension.swift in Sources */,
+				802EACA3236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift in Sources */,
+				802EAC86236C0CD0006C8A6D /* UITextView+RXCExtension.swift in Sources */,
+				802EAC87236C0CD0006C8A6D /* UILayoutPriority+RXCExtension.swift in Sources */,
+				802EAC9C236C0CD0006C8A6D /* Data+RXCExtension.swift in Sources */,
+				802EAC91236C0CD0006C8A6D /* URLComponents+RXCExtension.swift in Sources */,
+				802EAC7C236C0CD0006C8A6D /* CGSize+RXCExtension.swift in Sources */,
+				802EAC78236C0CD0006C8A6D /* ASTableNode+RXCExtension.swift in Sources */,
+				802EAC73236C0CD0006C8A6D /* ASNetworkImageNode+RXCExtension.swift in Sources */,
+				802EAC70236C0CD0006C8A6D /* ASCellNode+RXCExtension.swift in Sources */,
+				802EAC83236C0CD0006C8A6D /* UIViewController+RXCExtension.swift in Sources */,
+				802EAC9A236C0CD0006C8A6D /* NSMutableAttributedString+RXCExtension.swift in Sources */,
+				802EAC95236C0CD0006C8A6D /* NSArray+RXCExtension.swift in Sources */,
+				802EAC92236C0CD0006C8A6D /* Error+URLError.swift in Sources */,
+				802EAC85236C0CD0006C8A6D /* UITableViewCell+RXCExtension.swift in Sources */,
+				802EAC71236C0CD0006C8A6D /* ASTextNode+Label.swift in Sources */,
+				802EAC74236C0CD0006C8A6D /* ASImageNode+RXCExtension.swift in Sources */,
+				802EAC84236C0CD0006C8A6D /* UIFont+RXCExtension.swift in Sources */,
+				802EAC77236C0CD0006C8A6D /* ASTextNode+RXCExtension.swift in Sources */,
+				802EAC97236C0CD0006C8A6D /* NSRegularExpression+RXCExtension.swift in Sources */,
+				802EAC79236C0CD0006C8A6D /* ASLayoutElement+RXCExtension.swift in Sources */,
+				802EACA9236C14EE006C8A6D /* RXCButton.swift in Sources */,
+				802EAC80236C0CD0006C8A6D /* UIResponder+RXCExtension.swift in Sources */,
+				802EAC75236C0CD0006C8A6D /* ASLayoutElement+Link.swift in Sources */,
+				802EAC94236C0CD0006C8A6D /* Bool+RXCExtension.swift in Sources */,
+				802EAC7F236C0CD0006C8A6D /* UINavigationBar+RXCExtension.swift in Sources */,
+				802EAC8C236C0CD0006C8A6D /* TimeInterval+RXCExtension.swift in Sources */,
+				802EAC96236C0CD0006C8A6D /* String+RXCExtension.swift in Sources */,
+				802EAC7D236C0CD0006C8A6D /* CGRect+Extension.swift in Sources */,
+				802EAC82236C0CD0006C8A6D /* UIView+RXCExtension.swift in Sources */,
+				802EAC8F236C0CD0006C8A6D /* String+RXCExtension+MD5.swift in Sources */,
+				802EAC76236C0CD0006C8A6D /* ASLayoutElementStyle+Link.swift in Sources */,
+				802EACA1236C0F0D006C8A6D /* RXCMessagedError.swift in Sources */,
+				802EAC8B236C0CD0006C8A6D /* Result+RXCExtension.swift in Sources */,
+				802EAC7A236C0CD0006C8A6D /* ASDisplayNode+RXCExtension.swift in Sources */,
+				802EAC99236C0CD0006C8A6D /* NSAttributedString+RXCExtension.swift in Sources */,
+				802EAC72236C0CD0006C8A6D /* PINRemoteImageManager+RXCExtension.swift in Sources */,
+				802EAC98236C0CD0006C8A6D /* SwiftArray+RXCExtension.swift in Sources */,
+				802EAC81236C0CD0006C8A6D /* UIColor+RXCExtension.swift in Sources */,
+				802EAC9B236C0CD0006C8A6D /* Integer+RXCExtension.swift in Sources */,
+				802EAC90236C0CD0006C8A6D /* FloatingPoint+RXCExtension.swift in Sources */,
+				802EACA7236C1469006C8A6D /* RXCBindableObject.swift in Sources */,
+				802EAC89236C0CD0006C8A6D /* UIImage+RXCExtension.swift in Sources */,
+				802EAC8D236C0CD0006C8A6D /* DispatchTime+RXCExtension.swift in Sources */,
+				802EAC8A236C0CD0006C8A6D /* CharacterSet+RXCExtension.swift in Sources */,
+				802EAC7B236C0CD0006C8A6D /* CGImage+RXCExtension.swift in Sources */,
+				802EAC7E236C0CD0006C8A6D /* CGFloat+Extension.swift in Sources */,
+				802EAC93236C0CD0006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

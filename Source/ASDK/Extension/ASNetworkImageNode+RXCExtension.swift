@@ -11,6 +11,3 @@ import Foundation
 import AsyncDisplayKit
 #endif
 
-#if canImport(AsyncDisplayKit)
-
-#endif

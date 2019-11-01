@@ -15,7 +15,13 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
-  - SwiftyJSON (5.0.0)
+  - RXCSwiftComponents (1.0):
+    - RXCSwiftComponents/Core (= 1.0)
+  - RXCSwiftComponents/Core (1.0)
+  - RXCSwiftComponents/MJRefresh (1.0):
+    - MJRefresh (~> 3.2)
+  - RXCSwiftComponents/Texture (1.0):
+    - Texture (~> 2.8)
   - Texture (2.8.1):
     - Texture/AssetsLibrary (= 2.8.1)
     - Texture/Core (= 2.8.1)
@@ -38,9 +44,9 @@ PODS:
     - Texture/Core
 
 DEPENDENCIES:
-  - MJRefresh
-  - SwiftyJSON
-  - Texture (~> 2.8)
+  - RXCSwiftComponents (from `../`)
+  - RXCSwiftComponents/MJRefresh (from `../`)
+  - RXCSwiftComponents/Texture (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -48,17 +54,20 @@ SPEC REPOS:
     - PINCache
     - PINOperation
     - PINRemoteImage
-    - SwiftyJSON
     - Texture
+
+EXTERNAL SOURCES:
+  RXCSwiftComponents:
+    :path: "../"
 
 SPEC CHECKSUMS:
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  RXCSwiftComponents: ec723ac5b16ea45a55999f569c1128629f305b3e
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
 
-PODFILE CHECKSUM: 2d28b35402d7a731377b7ae7f145c6f9ba17897c
+PODFILE CHECKSUM: 2bc93abc114be1203969afa4528c09d42883c671
 
 COCOAPODS: 1.8.4
