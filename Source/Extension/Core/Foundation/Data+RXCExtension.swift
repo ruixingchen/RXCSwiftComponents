@@ -7,13 +7,11 @@
 //
 
 import Foundation
-#if canImport(CryptoSwift)
-import CryptoSwift
-#endif
-
+import CommonCrypto
 
 public extension Data {
 
+    ///返回常见的mineType
     var mineType:String? {
         var b:UInt8 = 0
         self.copyBytes(to: &b, count: 1)
@@ -38,11 +36,30 @@ public extension Data {
         }
     }
 
-    #if canImport(CryptoSwift)
-    var md5:String {
-        let _md5 = self.md5().toHexString()
-        return _md5
+    func rxc_md5()->Data {
+        let length = Int(CC_MD5_DIGEST_LENGTH)
+        let messageData = self
+        var digestData = Data(count: length)
+
+        _ = digestData.withUnsafeMutableBytes { digestBytes -> UInt8 in
+            messageData.withUnsafeBytes { messageBytes -> UInt8 in
+                if let messageBytesBaseAddress = messageBytes.baseAddress, let digestBytesBlindMemory = digestBytes.bindMemory(to: UInt8.self).baseAddress {
+                    let messageLength = CC_LONG(messageData.count)
+                    //deprecated in iOS 13
+                    CC_MD5(messageBytesBaseAddress, messageLength, digestBytesBlindMemory)
+                }
+                return 0
+            }
+        }
+        return digestData
     }
-    #endif
+
+    func rxc_md5Hex()->String {
+        return self.rxc_md5().map { String(format: "%02hhx", $0) }.joined()
+    }
+
+    func rxc_md5Base64()->String {
+        return self.rxc_md5().base64EncodedString()
+    }
 
 }

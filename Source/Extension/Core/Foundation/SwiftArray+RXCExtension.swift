@@ -17,26 +17,35 @@ public extension Array {
         return self[index]
     }
 
-    mutating func appendOptional(_ element: Element?) {
+    @discardableResult
+    mutating func appendOptional(_ element: Element?)->Bool {
         if element != nil {
             self.append(element!)
+            return true
+        }else {
+            return false
         }
     }
 
-    subscript(range: CountableClosedRange<Int>) -> [Element] {
-        var arr: [Element] = []
-        for i in range {
-            arr.append(self[i])
-        }
-        return arr
+    subscript(range: CountableClosedRange<Index>) -> [Element] {
+        let low = self.index(self.startIndex, offsetBy: range.lowerBound)
+        let up = self.index(self.startIndex, offsetBy: range.upperBound)
+        return [Element].init(self[low..<up])
     }
 
-    @discardableResult
-    func maxNum(_ num:Int) -> [Element] {
-        if self.count > num {
-            return Array(self[0..<num])
+    ///限制数量, 将超过的部分删除, 返回
+    func limitingCount(_ max:Int) -> [Element] {
+        if self.count > max {
+            return [Element].init(self[0..<max])
+        }else {
+            return self
         }
-        return self
+    }
+    
+    mutating func limittedCount(_ max:Int) {
+        if self.count > max {
+            self = [Element].init(self[0..<max])
+        }
     }
 
 }

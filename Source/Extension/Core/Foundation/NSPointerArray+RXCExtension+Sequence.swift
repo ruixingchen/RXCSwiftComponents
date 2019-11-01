@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 extension NSPointerArray: Sequence {
 
     public func makeIterator() -> NSPointerArray.RXCIterator {
@@ -41,3 +41,4 @@ public extension NSPointerArray {
     }
 
 }
+*/

@@ -17,12 +17,16 @@ public extension BinaryInteger {
         return Int(self)
     }
 
-    var cgfloat:CGFloat {
-        return CGFloat(self)
+    var float:Float {
+        return Float(self)
     }
 
     var double:Double {
         return Double(self)
+    }
+
+    var cgfloat:CGFloat {
+        return CGFloat(self)
     }
 }
 
@@ -32,11 +36,5 @@ public extension SignedInteger {
         if self < 0 {return -self}
         return self
     }
-
-}
-
-public extension Int {
-
-
 
 }

@@ -8,23 +8,22 @@
 
 import Foundation
 
-public typealias ASAttributesDict = [NSAttributedString.Key:Any]
-
 public extension NSAttributedString {
 
     /// 将不可变富文本转换为可变富文本
     ///
     /// - Parameter copy: 是否强制copy指针, 返回一个新的指针
-    func toMutable(copy:Bool=false)->NSMutableAttributedString {
+    func toMutable(copy:Bool=true)->NSMutableAttributedString {
         if copy {
             return NSMutableAttributedString(attributedString: self)
+        }else {
+            if let m = self as? NSMutableAttributedString {return m}
+            return NSMutableAttributedString(attributedString: self)
         }
-        if let m = self as? NSMutableAttributedString {return m}
-        return NSMutableAttributedString(attributedString: self)
     }
 
     ///返回删除了两端符合字符集要求的富文本
-    func trimmed(characterSet:CharacterSet=CharacterSet.whitespacesAndNewlines)->NSAttributedString {
+    func trimming(characterSet:CharacterSet=CharacterSet.whitespacesAndNewlines)->NSMutableAttributedString {
         let att = NSMutableAttributedString(attributedString: self)
         //先从后面开始遍历
         if true {
@@ -32,7 +31,7 @@ public extension NSAttributedString {
             for i in (0..<att.length).reversed() {
                 let subAtt = self.attributedSubstring(from: NSRange(location: i, length: 1))
                 let subStr = subAtt.string
-                guard subStr.utf16Length > 0 else {
+                guard subStr.utf16.count > 0 else {
                     //无法获取字符串, 可能是一个表情或者其他数据, 判断为不符合要求, 停止遍历
                     break
                 }
@@ -53,7 +52,7 @@ public extension NSAttributedString {
             for i in (0..<att.length) {
                 let subAtt = self.attributedSubstring(from: NSRange(location: i, length: 1))
                 let subStr = subAtt.string
-                guard subStr.utf16Length > 0 else {
+                guard subStr.utf16.count > 0 else {
                     //无法获取字符串, 可能是一个表情或者其他数据, 判断为不符合要求, 停止遍历
                     break
                 }
@@ -70,6 +69,17 @@ public extension NSAttributedString {
             }
         }
         return att
+    }
+
+    /// 对超出的字符使用...来代替
+    func trunction(maxLength: Int) -> NSAttributedString {
+        if self.length <= maxLength {
+            return self
+        }else {
+            let mutable = self.toMutable()
+            mutable.replaceCharacters(in: NSRange(location: maxLength+1, length: self.length-maxLength), with: "...")
+            return mutable
+        }
     }
 
 }

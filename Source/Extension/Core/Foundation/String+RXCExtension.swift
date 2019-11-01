@@ -49,7 +49,8 @@ public extension String {
         return self
     }
 
-    func trimming(in characterSet:CharacterSet)->String {
+    ///方法名更短的trim
+    func trimming(in characterSet:CharacterSet=CharacterSet.whitespacesAndNewlines)->String {
         return self.trimmingCharacters(in: characterSet)
     }
 
@@ -112,25 +113,29 @@ public extension String {
     func toURL()->URL? {
         var url:URL? = URL(string: self)
         if url == nil {
-            url = URL(string: self.urlEncoded())
+            if let encoded = self.urlEncoded(safe: true) {
+                url = URL(string: encoded)
+            }
         }
         return url
     }
 
     ///if marked safe, will decode and encode
-    func urlEncoded(safe:Bool=true) throws -> String {
+    func urlEncoded(safe:Bool=true) -> String? {
         //为了防止URL被多次转码解码, 如果标记为safe, 则会先完全解码之后再转码
         let text:String
         if safe {
-            let decoded = self.urlDecoded(loop: true)
-            precondition(<#T##condition: Bool##Bool#>, <#T##message: String##String#>)
-            text = decoded!
+            if let decoded = self.urlDecoded(loop: true) {
+                text = decoded
+            }else {
+                text = self
+            }
         }else{
             text = self
         }
         //这里一定要用urlQueryAllowed, 否则可能解析错误或者失败
         return text.addingPercentEncoding(withAllowedCharacters:
-            CharacterSet.urlQueryAllowed) ?? ""
+            CharacterSet.urlQueryAllowed)
     }
 
     /// URL解码
@@ -147,7 +152,7 @@ public extension String {
             var after = before.removingPercentEncoding
             while (after != nil && after != before) {
                 before = after!
-                after = before.removingPercentEncoding
+                after = after!.removingPercentEncoding
             }
             return after
         }
@@ -157,39 +162,14 @@ public extension String {
         return String(self.reversed())
     }
 
+    ///获取子串, 包括开始和结束
     func subString(from: Int, to: Int) -> String {
-        let range = Range(uncheckedBounds: (lower: self.utf16.index(self.utf16.startIndex, offsetBy: from), upper: self.utf16.index(self.utf16.startIndex, offsetBy: to)))
-        let result = String.init(describing: self[range])
-        return result
+        return String.init(describing: self[from...to])
     }
 
     func subString(range:NSRange) -> String {
-        return self.subString(from: range.lowerBound, to: range.upperBound)
+        return String.init(describing: self[range])
     }
-
-    #if canImport(CryptoSwift)
-    var md5:String {
-        return self.md5()
-    }
-    #else
-    #if false
-    func md5() -> String {
-        let string = self
-        let context = UnsafeMutablePointer<CC_MD5_CTX>.allocate(capacity: 1)
-        var digest = Array<UInt8>(repeating: 0, count: Int(CC_MD5_DIGEST_LENGTH))
-        CC_MD5_Init(context)
-        CC_MD5_Update(context, string, CC_LONG(string.lengthOfBytes(using: String.Encoding.utf8)))
-        CC_MD5_Final(&digest, context)
-        context.deallocate()
-        var hexString = ""
-        for byte in digest {
-            hexString += String(format: "%02x", byte)
-        }
-
-        return hexString
-    }
-    #endif
-    #endif
 
     var isNotEmpty:Bool {
         return !self.isEmpty
@@ -199,8 +179,9 @@ public extension String {
         return !self.isBlank
     }
 
+    ///将换行符转换为空格
     func lineBreakerToSpace()->String {
-        return self.replacingOccurrences(of: "[\n\r]", with: " ", options: String.CompareOptions.regularExpression, range: nil)
+        return self.replacingCharactersFromSet(characterSet: .newlines, with: " ")
     }
 
 }

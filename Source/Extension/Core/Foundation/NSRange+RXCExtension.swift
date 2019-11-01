@@ -15,6 +15,19 @@ public extension NSRange {
         self.init(location: location, length: endLocation-location+1)
     }
 
+    static var zero:NSRange {
+        return NSRange(location: 0, length: 0)
+    }
+
+    ///是否是0位置0长度
     var isZero:Bool {return self.location == 0 && self.length == 0}
+
+    func toRange()->Range<Int> {
+        return self.location..<self.location+self.length
+    }
+
+    func toClosedRange()->ClosedRange<Int> {
+        return self.location...self.location+self.length-1
+    }
 
 }

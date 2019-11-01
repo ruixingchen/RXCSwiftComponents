@@ -10,7 +10,7 @@ import Foundation
 
 public extension URL {
 
-    var decodedString:String {
+    var decodedString:String? {
         return self.absoluteString.urlDecoded(loop: true)
     }
 
@@ -42,9 +42,14 @@ public extension URL {
 //    }
 
     init ? (rawString:String) {
-        self.init(string: rawString.urlEncoded(safe: true))
+        if let encoded = rawString.urlEncoded(safe: false), let url = URL(string: encoded) {
+            self = url
+        }else {
+            return nil
+        }
     }
 
+    ///删除applewebdata
     func removeApplewebdata()->URL {
         if self.scheme == "applewebdata" {
             guard var components = URLComponents(url: self, resolvingAgainstBaseURL: true) else {return self}
@@ -60,35 +65,7 @@ public extension URL {
     }
 
     func getQuery(name:String)->String? {
-        return self.components?.queryItems?.filter({$0.name==name}).first?.value
-    }
-
-    ///set nil means remove the query
-    subscript(queryName:String)->String? {
-        get {
-            return getQuery(name: queryName)
-        }
-        set {
-            guard var components = self.components else {return}
-            if newValue == nil {
-                //rmeove
-                let items = components.queryItems?.filter({$0.name != queryName})
-                components.queryItems = items
-                guard let url = components.url else {return}
-                self = url
-            }else {
-                //update value
-                guard var items = components.queryItems else {return}
-                for i in 0..<items.count {
-                    if items[i].name == queryName {
-                        items[i].value = newValue
-                    }
-                }
-                components.queryItems = items
-                guard let url = components.url else {return}
-                self = url
-            }
-        }
+        return self.components?.getQuery(name: name)
     }
 
 }
