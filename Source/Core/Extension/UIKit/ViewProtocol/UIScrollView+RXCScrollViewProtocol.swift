@@ -338,6 +338,7 @@ extension UIScrollView: RXCScrollViewProtocol {
         }
     }
 
+    @available(iOS 10.0, *)
     public var rsc_refreshControl: UIRefreshControl? {
         get {
             return self.refreshControl

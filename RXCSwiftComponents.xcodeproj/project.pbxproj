@@ -74,6 +74,7 @@
 		80CCEBA4236C82FC000FCD6F /* ASCollectionNode+RXCScrollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEBA0236C82FC000FCD6F /* ASCollectionNode+RXCScrollViewProtocol.swift */; };
 		80CCEBA7236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEBA5236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift */; };
 		80CCEBA8236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEBA6236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift */; };
+		80CCEBAC236CB10A000FCD6F /* RXCMutableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEBAB236CB10A000FCD6F /* RXCMutableArray.swift */; };
 		959647C29BA5D8842B5C1EF9 /* Pods_RXCSwiftComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09291D4544D98E8E19CFE36 /* Pods_RXCSwiftComponents.framework */; };
 		B22893FD9D498446A0B91C02 /* Pods_RXCSwiftComponents_RXCSwiftComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217FB27BBE97893F0099065 /* Pods_RXCSwiftComponents_RXCSwiftComponentsTests.framework */; };
 /* End PBXBuildFile section */
@@ -160,6 +161,7 @@
 		80CCEBA0236C82FC000FCD6F /* ASCollectionNode+RXCScrollViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASCollectionNode+RXCScrollViewProtocol.swift"; sourceTree = "<group>"; };
 		80CCEBA5236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTableNode+RXCListViewProtocol.swift"; sourceTree = "<group>"; };
 		80CCEBA6236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASCollectionNode+RXCListViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEBAB236CB10A000FCD6F /* RXCMutableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCMutableArray.swift; sourceTree = "<group>"; };
 		80DBB922236BD38300DF0044 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9D3F90484F4856532A780371 /* Pods-RXCSwiftComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXCSwiftComponents.debug.xcconfig"; path = "Target Support Files/Pods-RXCSwiftComponents/Pods-RXCSwiftComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		9D639884B02DA482F2C4297B /* Pods-RXCSwiftComponents-RXCSwiftComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXCSwiftComponents-RXCSwiftComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-RXCSwiftComponents-RXCSwiftComponentsTests/Pods-RXCSwiftComponents-RXCSwiftComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				802EACA0236C0F0D006C8A6D /* RXCMessagedError.swift */,
 				802EACA6236C1469006C8A6D /* RXCBindableObject.swift */,
 				802EACA8236C14EE006C8A6D /* RXCButton.swift */,
+				80CCEBAB236CB10A000FCD6F /* RXCMutableArray.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				802EAC85236C0CD0006C8A6D /* UITableViewCell+RXCExtension.swift in Sources */,
 				802EAC71236C0CD0006C8A6D /* ASTextNode+Label.swift in Sources */,
 				802EAC74236C0CD0006C8A6D /* ASImageNode+RXCExtension.swift in Sources */,
+				80CCEBAC236CB10A000FCD6F /* RXCMutableArray.swift in Sources */,
 				80CCEBA7236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift in Sources */,
 				80CCEB9B236C82AE000FCD6F /* UIScrollView+RXCScrollViewProtocol.swift in Sources */,
 				802EAC84236C0CD0006C8A6D /* UIFont+RXCExtension.swift in Sources */,
