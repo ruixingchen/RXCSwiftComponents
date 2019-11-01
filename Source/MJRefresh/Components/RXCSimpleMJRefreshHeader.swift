@@ -59,15 +59,5 @@ open class RXCSimpleMJRefreshHeader: MJRefreshHeader {
         }
     }
 
-    public override var state: MJRefreshState {
-        didSet {
-//            if state == .idle || state == .noMoreData {
-//                self.indicator.stopAnimating()
-//            }else{
-//                self.indicator.startAnimating()
-//            }
-        }
-    }
-
 }
 #endif

@@ -61,6 +61,19 @@
 		80C8D589236B3ED100664FC5 /* RXCSwiftComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C8D57F236B3ED000664FC5 /* RXCSwiftComponents.framework */; };
 		80C8D58E236B3ED100664FC5 /* RXCSwiftComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8D58D236B3ED100664FC5 /* RXCSwiftComponentsTests.swift */; };
 		80C8D590236B3ED100664FC5 /* RXCSwiftComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C8D582236B3ED000664FC5 /* RXCSwiftComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80CCEB8E236C80AF000FCD6F /* RXCListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB8D236C80AF000FCD6F /* RXCListViewProtocol.swift */; };
+		80CCEB90236C8119000FCD6F /* RXCScrollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB8F236C8118000FCD6F /* RXCScrollViewProtocol.swift */; };
+		80CCEB92236C812F000FCD6F /* RXCViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB91236C812F000FCD6F /* RXCViewProtocol.swift */; };
+		80CCEB94236C81C1000FCD6F /* UIView+RXCViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB93236C81C1000FCD6F /* UIView+RXCViewProtocol.swift */; };
+		80CCEB98236C8215000FCD6F /* UICollectionView+RXCListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB96236C8215000FCD6F /* UICollectionView+RXCListViewProtocol.swift */; };
+		80CCEB99236C8215000FCD6F /* UITableView+RXCListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB97236C8215000FCD6F /* UITableView+RXCListViewProtocol.swift */; };
+		80CCEB9B236C82AE000FCD6F /* UIScrollView+RXCScrollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB9A236C82AE000FCD6F /* UIScrollView+RXCScrollViewProtocol.swift */; };
+		80CCEBA1236C82FC000FCD6F /* ASTableNode+RXCScrollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB9D236C82FC000FCD6F /* ASTableNode+RXCScrollViewProtocol.swift */; };
+		80CCEBA2236C82FC000FCD6F /* ASDisplayNode+RXCViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB9E236C82FC000FCD6F /* ASDisplayNode+RXCViewProtocol.swift */; };
+		80CCEBA3236C82FC000FCD6F /* ASScrollNode+RXCScrollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEB9F236C82FC000FCD6F /* ASScrollNode+RXCScrollViewProtocol.swift */; };
+		80CCEBA4236C82FC000FCD6F /* ASCollectionNode+RXCScrollViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEBA0236C82FC000FCD6F /* ASCollectionNode+RXCScrollViewProtocol.swift */; };
+		80CCEBA7236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEBA5236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift */; };
+		80CCEBA8236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CCEBA6236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift */; };
 		959647C29BA5D8842B5C1EF9 /* Pods_RXCSwiftComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09291D4544D98E8E19CFE36 /* Pods_RXCSwiftComponents.framework */; };
 		B22893FD9D498446A0B91C02 /* Pods_RXCSwiftComponents_RXCSwiftComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F217FB27BBE97893F0099065 /* Pods_RXCSwiftComponents_RXCSwiftComponentsTests.framework */; };
 /* End PBXBuildFile section */
@@ -134,6 +147,19 @@
 		80C8D588236B3ED100664FC5 /* RXCSwiftComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXCSwiftComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C8D58D236B3ED100664FC5 /* RXCSwiftComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCSwiftComponentsTests.swift; sourceTree = "<group>"; };
 		80C8D58F236B3ED100664FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80CCEB8D236C80AF000FCD6F /* RXCListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCListViewProtocol.swift; sourceTree = "<group>"; };
+		80CCEB8F236C8118000FCD6F /* RXCScrollViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCScrollViewProtocol.swift; sourceTree = "<group>"; };
+		80CCEB91236C812F000FCD6F /* RXCViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCViewProtocol.swift; sourceTree = "<group>"; };
+		80CCEB93236C81C1000FCD6F /* UIView+RXCViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RXCViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEB96236C8215000FCD6F /* UICollectionView+RXCListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RXCListViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEB97236C8215000FCD6F /* UITableView+RXCListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RXCListViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEB9A236C82AE000FCD6F /* UIScrollView+RXCScrollViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+RXCScrollViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEB9D236C82FC000FCD6F /* ASTableNode+RXCScrollViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTableNode+RXCScrollViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEB9E236C82FC000FCD6F /* ASDisplayNode+RXCViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASDisplayNode+RXCViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEB9F236C82FC000FCD6F /* ASScrollNode+RXCScrollViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASScrollNode+RXCScrollViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEBA0236C82FC000FCD6F /* ASCollectionNode+RXCScrollViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASCollectionNode+RXCScrollViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEBA5236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTableNode+RXCListViewProtocol.swift"; sourceTree = "<group>"; };
+		80CCEBA6236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASCollectionNode+RXCListViewProtocol.swift"; sourceTree = "<group>"; };
 		80DBB922236BD38300DF0044 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9D3F90484F4856532A780371 /* Pods-RXCSwiftComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXCSwiftComponents.debug.xcconfig"; path = "Target Support Files/Pods-RXCSwiftComponents/Pods-RXCSwiftComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		9D639884B02DA482F2C4297B /* Pods-RXCSwiftComponents-RXCSwiftComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXCSwiftComponents-RXCSwiftComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-RXCSwiftComponents-RXCSwiftComponentsTests/Pods-RXCSwiftComponents-RXCSwiftComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +220,7 @@
 		802EAC3B236C0CD0006C8A6D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				80CCEB9C236C82DC000FCD6F /* ViewProtocol */,
 				802EAC3C236C0CD0006C8A6D /* ASCellNode+RXCExtension.swift */,
 				802EAC3D236C0CD0006C8A6D /* ASTextNode+Label.swift */,
 				802EAC3E236C0CD0006C8A6D /* PINRemoteImageManager+RXCExtension.swift */,
@@ -212,6 +239,7 @@
 		802EAC47236C0CD0006C8A6D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				80CCEB8C236C808E000FCD6F /* Protocol */,
 				802EAC9F236C0EFD006C8A6D /* Components */,
 				802EAC48236C0CD0006C8A6D /* Extension */,
 			);
@@ -242,6 +270,7 @@
 		802EAC4E236C0CD0006C8A6D /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				80CCEB95236C8207000FCD6F /* ViewProtocol */,
 				802EAC4F236C0CD0006C8A6D /* UINavigationBar+RXCExtension.swift */,
 				802EAC50236C0CD0006C8A6D /* UIResponder+RXCExtension.swift */,
 				802EAC51236C0CD0006C8A6D /* UIColor+RXCExtension.swift */,
@@ -359,6 +388,40 @@
 				802EAC47236C0CD0006C8A6D /* Core */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		80CCEB8C236C808E000FCD6F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				80CCEB8D236C80AF000FCD6F /* RXCListViewProtocol.swift */,
+				80CCEB8F236C8118000FCD6F /* RXCScrollViewProtocol.swift */,
+				80CCEB91236C812F000FCD6F /* RXCViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		80CCEB95236C8207000FCD6F /* ViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				80CCEB93236C81C1000FCD6F /* UIView+RXCViewProtocol.swift */,
+				80CCEB96236C8215000FCD6F /* UICollectionView+RXCListViewProtocol.swift */,
+				80CCEB97236C8215000FCD6F /* UITableView+RXCListViewProtocol.swift */,
+				80CCEB9A236C82AE000FCD6F /* UIScrollView+RXCScrollViewProtocol.swift */,
+			);
+			path = ViewProtocol;
+			sourceTree = "<group>";
+		};
+		80CCEB9C236C82DC000FCD6F /* ViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				80CCEB9E236C82FC000FCD6F /* ASDisplayNode+RXCViewProtocol.swift */,
+				80CCEB9F236C82FC000FCD6F /* ASScrollNode+RXCScrollViewProtocol.swift */,
+				80CCEB9D236C82FC000FCD6F /* ASTableNode+RXCScrollViewProtocol.swift */,
+				80CCEBA0236C82FC000FCD6F /* ASCollectionNode+RXCScrollViewProtocol.swift */,
+				80CCEBA5236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift */,
+				80CCEBA6236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift */,
+			);
+			path = ViewProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,11 +603,13 @@
 			files = (
 				802EAC88236C0CD0006C8A6D /* UIEdgeInsets+RXCExtension.swift in Sources */,
 				802EAC9D236C0CD0006C8A6D /* URL+RXCExtension.swift in Sources */,
+				80CCEBA8236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift in Sources */,
 				802EAC9E236C0CD0006C8A6D /* NSRange+RXCExtension.swift in Sources */,
 				802EAC8E236C0CD0006C8A6D /* NSPointerArray+RXCExtension.swift in Sources */,
 				802EACA3236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift in Sources */,
 				802EAC86236C0CD0006C8A6D /* UITextView+RXCExtension.swift in Sources */,
 				802EAC87236C0CD0006C8A6D /* UILayoutPriority+RXCExtension.swift in Sources */,
+				80CCEBA4236C82FC000FCD6F /* ASCollectionNode+RXCScrollViewProtocol.swift in Sources */,
 				802EAC9C236C0CD0006C8A6D /* Data+RXCExtension.swift in Sources */,
 				802EAC91236C0CD0006C8A6D /* URLComponents+RXCExtension.swift in Sources */,
 				802EAC7C236C0CD0006C8A6D /* CGSize+RXCExtension.swift in Sources */,
@@ -555,9 +620,12 @@
 				802EAC9A236C0CD0006C8A6D /* NSMutableAttributedString+RXCExtension.swift in Sources */,
 				802EAC95236C0CD0006C8A6D /* NSArray+RXCExtension.swift in Sources */,
 				802EAC92236C0CD0006C8A6D /* Error+URLError.swift in Sources */,
+				80CCEB98236C8215000FCD6F /* UICollectionView+RXCListViewProtocol.swift in Sources */,
 				802EAC85236C0CD0006C8A6D /* UITableViewCell+RXCExtension.swift in Sources */,
 				802EAC71236C0CD0006C8A6D /* ASTextNode+Label.swift in Sources */,
 				802EAC74236C0CD0006C8A6D /* ASImageNode+RXCExtension.swift in Sources */,
+				80CCEBA7236C8305000FCD6F /* ASTableNode+RXCListViewProtocol.swift in Sources */,
+				80CCEB9B236C82AE000FCD6F /* UIScrollView+RXCScrollViewProtocol.swift in Sources */,
 				802EAC84236C0CD0006C8A6D /* UIFont+RXCExtension.swift in Sources */,
 				802EAC77236C0CD0006C8A6D /* ASTextNode+RXCExtension.swift in Sources */,
 				802EAC97236C0CD0006C8A6D /* NSRegularExpression+RXCExtension.swift in Sources */,
@@ -565,11 +633,15 @@
 				802EACA9236C14EE006C8A6D /* RXCButton.swift in Sources */,
 				802EAC80236C0CD0006C8A6D /* UIResponder+RXCExtension.swift in Sources */,
 				802EAC75236C0CD0006C8A6D /* ASLayoutElement+Link.swift in Sources */,
+				80CCEBA2236C82FC000FCD6F /* ASDisplayNode+RXCViewProtocol.swift in Sources */,
 				802EAC94236C0CD0006C8A6D /* Bool+RXCExtension.swift in Sources */,
+				80CCEB92236C812F000FCD6F /* RXCViewProtocol.swift in Sources */,
 				802EAC7F236C0CD0006C8A6D /* UINavigationBar+RXCExtension.swift in Sources */,
 				802EAC8C236C0CD0006C8A6D /* TimeInterval+RXCExtension.swift in Sources */,
 				802EAC96236C0CD0006C8A6D /* String+RXCExtension.swift in Sources */,
 				802EAC7D236C0CD0006C8A6D /* CGRect+Extension.swift in Sources */,
+				80CCEB8E236C80AF000FCD6F /* RXCListViewProtocol.swift in Sources */,
+				80CCEB99236C8215000FCD6F /* UITableView+RXCListViewProtocol.swift in Sources */,
 				802EAC82236C0CD0006C8A6D /* UIView+RXCExtension.swift in Sources */,
 				802EAC8F236C0CD0006C8A6D /* String+RXCExtension+MD5.swift in Sources */,
 				802EAC76236C0CD0006C8A6D /* ASLayoutElementStyle+Link.swift in Sources */,
@@ -577,6 +649,8 @@
 				802EAC8B236C0CD0006C8A6D /* Result+RXCExtension.swift in Sources */,
 				802EAC7A236C0CD0006C8A6D /* ASDisplayNode+RXCExtension.swift in Sources */,
 				802EAC99236C0CD0006C8A6D /* NSAttributedString+RXCExtension.swift in Sources */,
+				80CCEB94236C81C1000FCD6F /* UIView+RXCViewProtocol.swift in Sources */,
+				80CCEB90236C8119000FCD6F /* RXCScrollViewProtocol.swift in Sources */,
 				802EAC72236C0CD0006C8A6D /* PINRemoteImageManager+RXCExtension.swift in Sources */,
 				802EAC98236C0CD0006C8A6D /* SwiftArray+RXCExtension.swift in Sources */,
 				802EAC81236C0CD0006C8A6D /* UIColor+RXCExtension.swift in Sources */,
@@ -587,7 +661,9 @@
 				802EAC8D236C0CD0006C8A6D /* DispatchTime+RXCExtension.swift in Sources */,
 				802EAC8A236C0CD0006C8A6D /* CharacterSet+RXCExtension.swift in Sources */,
 				802EAC7B236C0CD0006C8A6D /* CGImage+RXCExtension.swift in Sources */,
+				80CCEBA1236C82FC000FCD6F /* ASTableNode+RXCScrollViewProtocol.swift in Sources */,
 				802EAC7E236C0CD0006C8A6D /* CGFloat+Extension.swift in Sources */,
+				80CCEBA3236C82FC000FCD6F /* ASScrollNode+RXCScrollViewProtocol.swift in Sources */,
 				802EAC93236C0CD0006C8A6D /* NSPointerArray+RXCExtension+Sequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
