@@ -8,6 +8,7 @@ target 'RXCSwiftComponents' do
   pod 'Texture', '~> 2.8'
   pod 'SwiftyJSON'
   pod 'MJRefresh'
+  pod 'Alamofire'
 
   target 'RXCSwiftComponentsTests' do
     # Pods for testing

@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.9.1)
   - MJRefresh (3.2.0)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -38,12 +39,14 @@ PODS:
     - Texture/Core
 
 DEPENDENCIES:
+  - Alamofire
   - MJRefresh
   - SwiftyJSON
   - Texture (~> 2.8)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - MJRefresh
     - PINCache
     - PINOperation
@@ -52,6 +55,7 @@ SPEC REPOS:
     - Texture
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
@@ -59,6 +63,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
 
-PODFILE CHECKSUM: 2d28b35402d7a731377b7ae7f145c6f9ba17897c
+PODFILE CHECKSUM: c54abc087ba3f7c75b1201e57124fd122a34ff41
 
 COCOAPODS: 1.8.4

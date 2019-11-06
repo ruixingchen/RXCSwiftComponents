@@ -38,4 +38,11 @@ Pod::Spec.new do |spec|
     subspec.ios.frameworks = 'UIKit'
   end
 
+  spec.subspec 'Alamofire' do |subspec|
+    subspec.dependency 'Alamofire', '~> 4.9'
+
+    subspec.ios.source_files = 'Source/Alamofire/**/*.swift'
+    subspec.ios.frameworks = 'Foundation'
+  end
+
 end
