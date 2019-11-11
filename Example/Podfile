@@ -9,6 +9,8 @@ target 'Example' do
   pod 'RXCSwiftComponents/Texture', :path => '../'
   pod 'RXCSwiftComponents/MJRefresh', :path => '../'
 
+	pod 'LookinServer', :configurations => ['Debug']
+
   # Pods for Example
 
 end

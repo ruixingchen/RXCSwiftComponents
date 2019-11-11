@@ -9,8 +9,7 @@
 import UIKit
 
 ///一个假的NavigationBar, 尽量做到和系统NavigationBar一致的View层级, 默认只会显示基础的View, 左右有按钮, 中间是title, 如果想要自定义, 可以继承
-@available(*, deprecated, message: "未完成, 不要使用")
-private class RXCFakeNavigationBar: UIView {
+open class RXCFakeNavigationBar: UIView {
 
     public private(set) var leftButtons:[UIButton] = []
     public private(set) var rightButtons:[UIButton] = []
@@ -67,6 +66,9 @@ private class RXCFakeNavigationBar: UIView {
         }
     }
 
+    ///用barBackgroundView填充顶部的空间,模仿系统navBar的行为, 具体的请看layout里面的代码
+    open var barBackgroundViewFillTopSpace:Bool = true {didSet {self.setNeedsLayout()}}
+
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.initSetupSubviews()
@@ -77,16 +79,62 @@ private class RXCFakeNavigationBar: UIView {
     }
 
     open func initSetupSubviews() {
+        if #available(iOS 13, *) {
+            self.shadowView.backgroundColor = UIColor.init(dynamicProvider: { (trait) -> UIColor in
+                switch trait.userInterfaceStyle {
+                case .dark:
+                    return UIColor(red: 1, green: 1, blue: 1, alpha: 0.15)
+                default: return UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
+                }
+            })
+        }else {
+            //这个颜色取自 iOS 12.4
+            self.shadowView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
+        }
+        self.barBackgroundView.addSubview(self.shadowView)
         self.addSubview(self.barBackgroundView)
         self.addSubview(self.barContentView)
     }
 
     open override func layoutSubviews() {
         super.layoutSubviews()
+        if true {
+            ///布局background
+            if self.barBackgroundViewFillTopSpace {
+                self.barBackgroundView.frame = CGRect(x: 0, y: -self.frame.origin.y, width: self.bounds.width, height: self.bounds.height+self.frame.origin.y)
+            }else {
+                self.barBackgroundView.frame = self.bounds
+            }
+            var displayScale:CGFloat
+            if #available(iOS 13, *) {
+                displayScale = UITraitCollection.current.displayScale
+                if displayScale <= 0 {
+                    displayScale = UIScreen.main.scale
+                }
+            }else {
+                displayScale = UIScreen.main.scale
+            }
+            self.shadowView.frame = CGRect(x: 0, y: self.barBackgroundView.bounds.height, width: self.barBackgroundView.bounds.width, height: 1/displayScale)
+        }
+        if true {
+            //布局content
+            self.barContentView.frame = self.bounds
+            //左右的按钮保证每个有至少24宽度的情况下确保中间的title能完整显示
+            //确保title显示在正中央
+            self.titleLabel.sizeToFit()
 
-        self.barBackgroundView.frame = CGRect(x: 0, y: -self.frame.origin.y, width: self.bounds.width, height: self.bounds.height+self.frame.origin.y)
-        self.barContentView.frame = self.bounds
+            if (self.bounds.width - self.titleLabel.frame.width)/CGFloat(max(self.leftButtons.count, self.rightButtons.count)) < 24 {
+                var frame = self.titleLabel.frame
+                frame.size.width = self.bounds.width - CGFloat(max(self.leftButtons.count, self.rightButtons.count))*24
+                self.titleLabel.frame = frame
+            }
 
+            let buttonWidth = (self.bounds.width - self.titleLabel.frame.width)/CGFloat(max(self.leftButtons.count, self.rightButtons.count))
+            for i in self.leftButtons {
+                
+            }
+
+        }
     }
 
     open func didChangeTranslucent() {
@@ -111,3 +159,4 @@ private class RXCFakeNavigationBar: UIView {
 
 
 }
+

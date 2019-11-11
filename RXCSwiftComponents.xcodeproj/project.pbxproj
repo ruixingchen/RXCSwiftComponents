@@ -58,6 +58,7 @@
 		802EACA3236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA2236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift */; };
 		802EACA7236C1469006C8A6D /* RXCBindableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA6236C1469006C8A6D /* RXCBindableObject.swift */; };
 		802EACA9236C14EE006C8A6D /* RXCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA8236C14EE006C8A6D /* RXCButton.swift */; };
+		804988442373AF2200586B4F /* RXCMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804988432373AF2200586B4F /* RXCMisc.swift */; };
 		80C8D589236B3ED100664FC5 /* RXCSwiftComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C8D57F236B3ED000664FC5 /* RXCSwiftComponents.framework */; };
 		80C8D58E236B3ED100664FC5 /* RXCSwiftComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8D58D236B3ED100664FC5 /* RXCSwiftComponentsTests.swift */; };
 		80C8D590236B3ED100664FC5 /* RXCSwiftComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C8D582236B3ED000664FC5 /* RXCSwiftComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -147,6 +148,7 @@
 		802EACA2236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCSimpleMJRefreshHeader.swift; sourceTree = "<group>"; };
 		802EACA6236C1469006C8A6D /* RXCBindableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCBindableObject.swift; sourceTree = "<group>"; };
 		802EACA8236C14EE006C8A6D /* RXCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCButton.swift; sourceTree = "<group>"; };
+		804988432373AF2200586B4F /* RXCMisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCMisc.swift; sourceTree = "<group>"; };
 		80C8D57F236B3ED000664FC5 /* RXCSwiftComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXCSwiftComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C8D582236B3ED000664FC5 /* RXCSwiftComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXCSwiftComponents.h; sourceTree = "<group>"; };
 		80C8D583236B3ED000664FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				80F8156B236FD2A0001030D9 /* RXCMultipartFormDataSpec.swift */,
 				80FED11523726EEE0097E0D0 /* RXCFakeNavigationBar.swift */,
 				80FED11B2372DC3F0097E0D0 /* RXCCenterButtonTabBar.swift */,
+				804988432373AF2200586B4F /* RXCMisc.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -690,6 +693,7 @@
 				802EAC99236C0CD0006C8A6D /* NSAttributedString+RXCExtension.swift in Sources */,
 				80CCEB94236C81C1000FCD6F /* UIView+RXCViewProtocol.swift in Sources */,
 				80CCEB90236C8119000FCD6F /* RXCScrollViewProtocol.swift in Sources */,
+				804988442373AF2200586B4F /* RXCMisc.swift in Sources */,
 				802EAC72236C0CD0006C8A6D /* PINRemoteImageManager+RXCExtension.swift in Sources */,
 				802EAC98236C0CD0006C8A6D /* SwiftArray+RXCExtension.swift in Sources */,
 				802EAC81236C0CD0006C8A6D /* UIColor+RXCExtension.swift in Sources */,
@@ -860,6 +864,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RXCSwiftComponents/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -887,6 +892,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RXCSwiftComponents/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

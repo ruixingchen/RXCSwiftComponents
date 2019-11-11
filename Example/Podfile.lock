@@ -1,4 +1,5 @@
 PODS:
+  - LookinServer (1.0.0)
   - MJRefresh (3.2.0)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -44,12 +45,14 @@ PODS:
     - Texture/Core
 
 DEPENDENCIES:
+  - LookinServer
   - RXCSwiftComponents (from `../`)
   - RXCSwiftComponents/MJRefresh (from `../`)
   - RXCSwiftComponents/Texture (from `../`)
 
 SPEC REPOS:
   trunk:
+    - LookinServer
     - MJRefresh
     - PINCache
     - PINOperation
@@ -61,6 +64,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
@@ -68,6 +72,6 @@ SPEC CHECKSUMS:
   RXCSwiftComponents: fa8e140f92d37b8b07365f230044c1601084cbfd
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
 
-PODFILE CHECKSUM: 2bc93abc114be1203969afa4528c09d42883c671
+PODFILE CHECKSUM: 863e47bde2fe6b8eb99f2715a5cb92aeeffbdd65
 
 COCOAPODS: 1.8.4
