@@ -104,6 +104,7 @@ open class RXCCenterButtonTabBar: UITabBar {
     }
 
     open override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        guard !self.isHidden else {return super.hitTest(point, with: event)}
         if let button = self.centerButton {
             let converted = button.convert(point, from: self)
             if button.bounds.contains(converted) {
@@ -117,3 +118,4 @@ open class RXCCenterButtonTabBar: UITabBar {
     }
 
 }
+
