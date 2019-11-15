@@ -14,7 +14,6 @@
 		802EAC2E236C0BCC006C8A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802EAC2C236C0BCC006C8A6D /* Main.storyboard */; };
 		802EAC30236C0BCD006C8A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 802EAC2F236C0BCD006C8A6D /* Assets.xcassets */; };
 		802EAC33236C0BCD006C8A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802EAC31236C0BCD006C8A6D /* LaunchScreen.storyboard */; };
-		804988422373AA5000586B4F /* RXCFakeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804988412373AA5000586B4F /* RXCFakeNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		802EAC2F236C0BCD006C8A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		802EAC32236C0BCD006C8A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		802EAC34236C0BCD006C8A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		804988412373AA5000586B4F /* RXCFakeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCFakeNavigationBar.swift; sourceTree = "<group>"; };
 		8AF9B248873A29BEFA4707F2 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E788071F148B6FCE5A066BE5 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +70,6 @@
 				802EAC2F236C0BCD006C8A6D /* Assets.xcassets */,
 				802EAC31236C0BCD006C8A6D /* LaunchScreen.storyboard */,
 				802EAC34236C0BCD006C8A6D /* Info.plist */,
-				804988412373AA5000586B4F /* RXCFakeNavigationBar.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 			files = (
 				802EAC2B236C0BCC006C8A6D /* ViewController.swift in Sources */,
 				802EAC27236C0BCC006C8A6D /* AppDelegate.swift in Sources */,
-				804988422373AA5000586B4F /* RXCFakeNavigationBar.swift in Sources */,
 				802EAC29236C0BCC006C8A6D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

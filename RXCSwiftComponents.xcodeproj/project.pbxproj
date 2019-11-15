@@ -59,6 +59,7 @@
 		802EACA7236C1469006C8A6D /* RXCBindableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA6236C1469006C8A6D /* RXCBindableObject.swift */; };
 		802EACA9236C14EE006C8A6D /* RXCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EACA8236C14EE006C8A6D /* RXCButton.swift */; };
 		804988442373AF2200586B4F /* RXCMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804988432373AF2200586B4F /* RXCMisc.swift */; };
+		808B5D94237A54B1002C0D82 /* RXCCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B5D93237A54B1002C0D82 /* RXCCustomNavigationBar.swift */; };
 		80C8D589236B3ED100664FC5 /* RXCSwiftComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C8D57F236B3ED000664FC5 /* RXCSwiftComponents.framework */; };
 		80C8D58E236B3ED100664FC5 /* RXCSwiftComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8D58D236B3ED100664FC5 /* RXCSwiftComponentsTests.swift */; };
 		80C8D590236B3ED100664FC5 /* RXCSwiftComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C8D582236B3ED000664FC5 /* RXCSwiftComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -149,6 +150,7 @@
 		802EACA6236C1469006C8A6D /* RXCBindableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCBindableObject.swift; sourceTree = "<group>"; };
 		802EACA8236C14EE006C8A6D /* RXCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXCButton.swift; sourceTree = "<group>"; };
 		804988432373AF2200586B4F /* RXCMisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCMisc.swift; sourceTree = "<group>"; };
+		808B5D93237A54B1002C0D82 /* RXCCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXCCustomNavigationBar.swift; sourceTree = "<group>"; };
 		80C8D57F236B3ED000664FC5 /* RXCSwiftComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXCSwiftComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C8D582236B3ED000664FC5 /* RXCSwiftComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXCSwiftComponents.h; sourceTree = "<group>"; };
 		80C8D583236B3ED000664FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				80FED11523726EEE0097E0D0 /* RXCFakeNavigationBar.swift */,
 				80FED11B2372DC3F0097E0D0 /* RXCCenterButtonTabBar.swift */,
 				804988432373AF2200586B4F /* RXCMisc.swift */,
+				808B5D93237A54B1002C0D82 /* RXCCustomNavigationBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				802EAC9D236C0CD0006C8A6D /* URL+RXCExtension.swift in Sources */,
 				80CCEBA8236C8305000FCD6F /* ASCollectionNode+RXCListViewProtocol.swift in Sources */,
 				80FED11623726EEE0097E0D0 /* RXCFakeNavigationBar.swift in Sources */,
+				808B5D94237A54B1002C0D82 /* RXCCustomNavigationBar.swift in Sources */,
 				802EAC9E236C0CD0006C8A6D /* NSRange+RXCExtension.swift in Sources */,
 				802EAC8E236C0CD0006C8A6D /* NSPointerArray+RXCExtension.swift in Sources */,
 				802EACA3236C0F4A006C8A6D /* RXCSimpleMJRefreshHeader.swift in Sources */,
