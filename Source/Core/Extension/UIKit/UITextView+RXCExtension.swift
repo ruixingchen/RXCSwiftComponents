@@ -42,22 +42,36 @@ public extension UITextView {
 
 public extension UITextView {
 
-    @available(iOS, introduced: 10, message: "获取到的值可能不对，不要继续使用")
-//    var cursorFrame:CGRect? {
-//        guard let textPosition:UITextPosition = self.selectedTextRange?.end else {return nil}
-//        let cursorFrame:CGRect = self.caretRect(for: textPosition)
-//        return cursorFrame
-//    }
+    ///如果不layout获取到的值可能不正确
+    func cursorFrame(layout:Bool = true)->CGRect? {
+        guard let textPosition:UITextPosition = self.selectedTextRange?.end else {return nil}
+        if layout {
+            self.setNeedsLayout()
+            self.layoutIfNeeded()
+        }
+        let cursorFrame:CGRect = self.caretRect(for: textPosition)
+        return cursorFrame
+    }
 
-    var selectedTextFrameStart:CGRect? {
+    ///如果不layout获取到的值可能不正确
+    func selectedTextFrameStart(layout:Bool = true)->CGRect? {
         guard let range = self.selectedTextRange else {return nil}
+        if layout {
+            self.setNeedsLayout()
+            self.layoutIfNeeded()
+        }
         let position:UITextPosition = range.start
         let cursorFrame:CGRect = self.caretRect(for: position)
         return cursorFrame
     }
 
-    var selectedTextFrameEnd:CGRect? {
+    ///如果不layout获取到的值可能不正确
+    func selectedTextFrameEnd(layout:Bool = true)->CGRect? {
         guard let range = self.selectedTextRange else {return nil}
+        if layout {
+            self.setNeedsLayout()
+            self.layoutIfNeeded()
+        }
         let position:UITextPosition = range.end
         let cursorFrame:CGRect = self.caretRect(for: position)
         return cursorFrame
