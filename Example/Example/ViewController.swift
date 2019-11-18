@@ -77,7 +77,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         case 2:
             self.fakeBar.tintColor = UIColor.orange
         case 3:
-            self.title = (0..<100000000000000000).randomElement()!.description
+            let num = (1..<100).randomElement()!
+            self.title = (0..<num).map({_ in (0...9).randomElement()!.description}).joined()
         default:
 //            let cell = tableView.cellForRow(at: indexPath)!
 //            self.fakeBar.barTintColor = cell.contentView.backgroundColor

@@ -12,6 +12,14 @@ import UIKit
 ///a fake NavigationBar, try hard to keep the same api with system UINavigationBar, override to customize
 open class RXCFakeNavigationBar: UIView {
 
+    static func onMain(closure:@escaping ()->Void) {
+        if Thread.isMainThread {
+            closure()
+        }else {
+            DispatchQueue.main.async(execute: closure)
+        }
+    }
+
     ///用barBackgroundView填充顶部的空间,模仿系统navBar的行为, 具体的请看layout里面的代码
     open var barBackgroundViewFillTopSpace:Bool = true {didSet {self.setNeedsLayout()}}
 
@@ -39,8 +47,10 @@ open class RXCFakeNavigationBar: UIView {
     ///左右两边的边距
     open var spacing:CGFloat = 16 {
         didSet {
-            if self.superview != nil {
-                self.setNeedsLayout()
+            Self.onMain() {
+                if self.superview != nil {
+                    self.setNeedsLayout()
+                }
             }
         }
     }
@@ -48,8 +58,10 @@ open class RXCFakeNavigationBar: UIView {
     ///按钮的距离
     open var buttonSpacing:CGFloat = 8 {
         didSet {
-            if self.superview != nil {
-                self.setNeedsLayout()
+            Self.onMain() {
+                if self.superview != nil {
+                    self.setNeedsLayout()
+                }
             }
         }
     }
@@ -57,7 +69,9 @@ open class RXCFakeNavigationBar: UIView {
     ///透明模式下的模糊效果, 如果设置有值, 强制采用这个值, 否则采用和系统相似的值
     open var visualEffect: UIVisualEffect? {
         didSet {
-            self.didChangeVisualEffect()
+            Self.onMain() {
+                self.didChangeVisualEffect()
+            }
         }
     }
 
@@ -87,14 +101,18 @@ open class RXCFakeNavigationBar: UIView {
 
     open var isTranslucent:Bool = true {
         didSet {
-            self.didChangeTranslucent()
+            Self.onMain() {
+                self.didChangeTranslucent()
+            }
         }
     }
 
     ///如果设置为nil, 则会采用默认的颜色
     open var barTintColor: UIColor? {
         didSet {
-            self.didChangeBarTintColor()
+            Self.onMain() {
+                self.didChangeBarTintColor()
+            }
         }
     }
 
@@ -112,7 +130,9 @@ open class RXCFakeNavigationBar: UIView {
     ///标题的富文本属性
     open var titleAttributes:[NSAttributedString.Key:Any]? {
         didSet {
-            self.didChangeTitleAttributes()
+            Self.onMain() {
+                self.didChangeTitleAttributes()
+            }
         }
     }
 
@@ -133,7 +153,9 @@ open class RXCFakeNavigationBar: UIView {
     ///向最近的VC添加观察者, 在title发生变化的时候自动更新bar的title
     open var observeViewControllerTitle:Bool = true {
         didSet {
-            self.updateViewControllerTitleObserver()
+            Self.onMain() {
+                self.updateViewControllerTitleObserver()
+            }
         }
     }
 
@@ -247,8 +269,9 @@ open class RXCFakeNavigationBar: UIView {
                 //左右的按钮发生了干涉, title宽度只能为0
                 titleMaxWidth = 0
             }else {
-                titleMaxWidth = min(centerX - leftStackRight, rightStackLeft - centerX)*2
+                titleMaxWidth = min(centerX - leftStackRight, rightStackLeft - centerX)*2 - self.buttonSpacing*2
             }
+            if titleMaxWidth < 0 {titleMaxWidth = 0}
             let titleWidth = min(self.titleLabel.frame.width, titleMaxWidth)
             self.titleLabel.frame = CGRect(x: centerX-titleWidth/2, y: 0, width: titleWidth, height: self.bounds.height)
         }
@@ -373,6 +396,7 @@ open class RXCFakeNavigationBar: UIView {
         if let viewController = self.findViewController(), self.observeViewControllerTitle {
             if viewController != self.viewController_weak {
                 //不是同一个VC
+                viewController_weak?.removeObserver(self, forKeyPath: #keyPath(UIViewController.title), context: &self.viewControllerObserverContext)
                 viewController.addObserver(self, forKeyPath: #keyPath(UIViewController.title), options: .new, context: &self.viewControllerObserverContext)
                 self.viewController_weak = viewController
             }
