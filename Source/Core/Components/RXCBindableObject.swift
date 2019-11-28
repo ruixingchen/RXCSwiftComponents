@@ -18,6 +18,6 @@ public protocol RXCBindableObjectProtocol {
 ///描述一个可以绑定数据, 同时对外有一个获取已绑定数据的接口的对象
 public protocol RXCBindableModelStorageObjectProtocol: RXCBindableObjectProtocol {
 
-    var rxc_bindedEntity:Any? {get}
+    var rxc_bindedData:Any? {get}
 
 }

@@ -20,7 +20,9 @@ open class RXCSimpleMJRefreshHeader: MJRefreshHeader {
     public init(style:UIActivityIndicatorView.Style, target:AnyObject?, action:Selector?) {
         self.indicator = UIActivityIndicatorView(style: style)
         super.init(frame: CGRect.zero)
-        self.setRefreshingTarget(target, refreshingAction: action)
+        if let t = target, let a = action {
+            self.setRefreshingTarget(t, refreshingAction: a)
+        }
         self.addSubview(indicator)
     }
 
