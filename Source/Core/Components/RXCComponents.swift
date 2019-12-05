@@ -6,9 +6,37 @@
 //  Copyright © 2019 ruixingchen. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct RXCComponents {
+
+    public static var defaultNavigationBarContentHeight:CGFloat {
+        if #available(iOS 13, *) {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                return 50
+            }else {
+                return 44
+            }
+        }
+        return 44
+    }
+
+    public static var defaultTabBarContentHeight:CGFloat {
+        if #available(iOS 13, *) {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                return 50
+            }else {
+                return 49
+            }
+        }
+        return 49
+    }
+
+    @available(iOS 11, *)
+    public static var mainWindowSafeAreaInset: UIEdgeInsets {
+        let window:UIWindow? = UIApplication.shared.windows.first
+        return window?.safeAreaInsets ?? UIEdgeInsets.zero
+    }
 
     @available(iOS 8.0, *)
     public static func isSystemAtLeast(_ major:Int, _ minor:Int, _ patch:Int)->Bool {
